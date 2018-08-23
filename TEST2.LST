@@ -1,0 +1,194 @@
+File description : Test scene
+Number of frames : 500
+Frame rate : 3
+Viewing distance : 1.18
+Viewport width : 0.90
+Viewport height : 0.70
+Translation increment type : 0
+Rotation increment type : 0
+Background color : 0 0 0
+Self initial position : 0.0 0.0 0.0
+Self initial rotation : 0.0 0.0 0.0
+Self translational increment : 0.0 0.0 0.0
+Self rotational increment : 0.0 0.0 0.0
+
+
+	Object 1 - line + dots
+	   Array index : 0
+	   Initial position : 0.0 0.0 -40.0
+	   Initial rotation : 0.0 0.0 0.0
+	   Translational increment : 0.0 0.0 -5.0
+	   Rotational increment : 0.0 0.0 -90.0
+	   Frame masks :
+		start :    0   end :  500
+
+	   Number of elements : 6
+
+		Element 1 - Line
+		   Array index : 0
+		   Color : 15 0 0
+		   Start coordinate : 0.0 5.0 0.0
+		   End coordinate   : 0.0 -5.0 0.0
+
+		Element 2 - Point
+		   Array index : 0
+		   Color : 13 0 0
+		   Coordinate : 8.0 8.0 0.0
+
+		Element 3 - Point
+		   Array index : 1
+		   Color : 13 0 0
+		   Coordinate : 8.0 -8.0 0.0
+
+		Element 4 - Point
+		   Array index : 2
+		   Color : 13 0 0
+		   Coordinate : 8.0 4.0 0.0
+
+		Element 5 - Point
+		   Array index : 3
+		   Color : 13 0 0
+		   Coordinate : 8.0 -4.0 0.0
+
+		Element 6 - Point
+		   Array index : 4
+		   Color : 13 0 0
+		   Coordinate : 8.0 0.0 0.0
+
+
+	Object 2 - Square
+	   Array index : 1
+	   Initial position : 0.0 0.0 -50.0
+	   Initial rotation : 0.0 0.0 0.0
+	   Translational increment : 0.0 0.0 0.0
+	   Rotational increment : 45.0 0.0 0.0
+	   Frame masks :
+		start :    0   end :  500
+
+	   Number of elements : 1
+
+		Element 1 - Polygon
+		   Array index : 0
+		   Color : 11 0 0
+		   Number of vertices : 4
+			   Vertex 0 : -5.0 5.0 0.0
+			   Vertex 1 : 5.0 5.0 0.0
+			   Vertex 2 : 5.0 -5.0 0.0
+			   Vertex 3 : -5.0 -5.0 0.0
+
+
+	Object 3 - rectangles
+	   Array index : 2
+	   Initial position : 15.0 -10.0 0.0
+	   Initial rotation : 0.0 0.0 0.0
+	   Translational increment : -5.0 5.0 -10.0
+	   Rotational increment : -30.0 30.0 -30.0
+	   Frame masks :
+		start :  200   end :  500
+
+	   Number of elements : 2
+
+		Element 1 - Rectangle
+		   Array index : 0
+		   Color : 5 0 0
+		   1st coordinate : 10.0 -10.0 0.0
+		   2nd coordinate : -10.0 10.0 0.0
+
+		Element 2 - Rectangle
+		   Array index : 1
+		   Color : 1 0 0
+		   1st coordinate : 30.0 -30.0 0.0
+		   2nd coordinate : 40.0 -40.0 0.0
+
+
+	Object 4 - Box
+	   Array index : 3
+	   Initial position : 10.0 -10.0 -10.0
+	   Initial rotation : 0.0 0.0 0.0
+	   Translational increment : 0.0 0.0 -20.0
+	   Rotational increment : 0.0 0.0 -90.0
+	   Frame masks :
+		start :    0   end :  500
+
+	   Number of elements : 1
+
+		Element 1 - Box
+		   Array index : 0
+		   Color : 14 0 0
+		   1st coordinate : -10.0 10.0 0.0
+		   2nd coordinate : 10.0 -10.0 0.0
+		   3rd coordinate : 10.0 -10.0 -10.0
+
+
+
+**** File Diagnostics ****
+
+Last polygon used : 0
+Last point used : 4
+Last line used : 0
+Last rectangle used : 1
+Last box used : 0
+Last object used : 3
+
+
+Polygon flags
+   1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1
+
+Point flags
+   1   1   1   1   1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+
+Line flags
+   1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+
+Rectangle flags
+   1   1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1
+
+Box flags
+   1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1
+
+Object flags
+   1   1   1   1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+  -1  -1  -1  -1  -1

@@ -1,0 +1,39 @@
+--------------------Configuration: It2K - Win32 Release--------------------
+Begining build with project "D:\Choi\copengl30\Tracker\It2K.dsp", at root.
+Active configuration is Win32 (x86) Static Library (based on Win32 (x86) Static Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/It2K.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c "
+			"Browser Database Maker" with flags "/nologo /o"Lib/It2K.bsc" "
+			"Library Manager" with flags "/nologo /out:"Lib\It2K.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\TEMP\RSP10.tmp" with contents </nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/It2K.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Choi\copengl30\Tracker\Source\PiDircos.c"
+"D:\Choi\copengl30\Tracker\Source\PiEuler.c"
+"D:\Choi\copengl30\Tracker\Source\PiIT2K.c"
+"D:\Choi\copengl30\Tracker\Source\PiMath.c"
+"D:\Choi\copengl30\Tracker\Source\PiOri.c"
+"D:\Choi\copengl30\Tracker\Source\PiPos.c"
+"D:\Choi\copengl30\Tracker\Source\PiQtrn.c"
+>
+Creating command line "cl.exe @C:\TEMP\RSP10.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Lib\It2K.lib"  .\Release\PiDircos.obj .\Release\PiEuler.obj .\Release\PiIT2K.obj .\Release\PiMath.obj .\Release\PiOri.obj .\Release\PiPos.obj .\Release\PiQtrn.obj" 
+Compiling...
+PiDircos.c
+PiEuler.c
+PiIT2K.c
+D:\Choi\copengl30\Tracker\Source\PiIT2K.c(348) : warning C4761: integral size mismatch in argument; conversion supplied
+D:\Choi\copengl30\Tracker\Source\PiIT2K.c(353) : warning C4761: integral size mismatch in argument; conversion supplied
+D:\Choi\copengl30\Tracker\Source\PiIT2K.c(409) : warning C4761: integral size mismatch in argument; conversion supplied
+D:\Choi\copengl30\Tracker\Source\PiIT2K.c(436) : warning C4761: integral size mismatch in argument; conversion supplied
+PiMath.c
+PiOri.c
+PiPos.c
+PiQtrn.c
+Creating library...
+
+
+
+It2K.lib - 0 error(s), 4 warning(s)

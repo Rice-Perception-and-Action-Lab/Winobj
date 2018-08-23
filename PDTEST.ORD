@@ -1,0 +1,10 @@
+001 3rotate 1 0 0 300 2 5000 2 0 0 5000 1 0 1 0 cust1 0 1 1 cust2 0 beep
+002 test4 1 0 0 300 2 5000 2 0 0 5000 1 0 1 0 cust1 0 1 1 cust2 0 beep
+003 test4b 1 0 0 300 2 5000 2 0 0 5000 1 0 1 0 cust1 0 1 1 cust2 0 beep
+004 1sl2 1 0 0 300 2 5000 2 0 0 5000 1 0 1 0 cust1 0 1 1 cust2 0 beep
+005 1sl2long 1 0 0 300 2 5000 2 0 0 5000 1 0 1 0 cust1 0 1 1 cust2 0 beep
+006 fullsc 1 0 0 300 2 5000 2 0 0 5000 1 0 1 0 cust1 0 1 1 cust2 0 beep
+007 traptest 1 0 0 300 2 5000 2 0 0 5000 1 0 1 0 cust1 0 1 1 cust2 0 beep
+008 62t3nsmr 1 0 0 300 2 5000 2 0 0 5000 1 0 1 0 cust1 0 1 1 cust2 0 beep
+009 1sl2wire 1 0 0 300 2 5000 2 0 0 5000 1 0 1 0 cust1 0 1 1 cust2 0 beep
+010 62t3n 1 0 0 300 2 5000 2 0 0 5000 1 0 1 0 cust1 0 1 1 cust2 0 beep
