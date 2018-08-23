@@ -90,6 +90,34 @@ int count_ix;
 int count_iy;
 // Choi. End 07052000
 
+
+//Adam. start 112117
+typedef BOOL (WINAPI *LPFN_ISWOW64PROCESS) (HANDLE, PBOOL);
+
+LPFN_ISWOW64PROCESS fnIsWow64Process;
+
+BOOL IsWow64()
+{
+    BOOL bIsWow64 = FALSE;
+
+    //IsWow64Process is not available on all supported versions of Windows.
+    //Use GetModuleHandle to get a handle to the DLL that contains the function
+    //and GetProcAddress to get a pointer to the function if available.
+
+    fnIsWow64Process = (LPFN_ISWOW64PROCESS) GetProcAddress(
+        GetModuleHandle(TEXT("kernel32")),"IsWow64Process");
+
+    if(NULL != fnIsWow64Process)
+    {
+        if (!fnIsWow64Process(GetCurrentProcess(),&bIsWow64))
+        {
+            //handle error
+        }
+    }
+    return bIsWow64;
+}
+//Adam. end 112117
+
 // Change viewing volume and viewport.  Called when window is resized
 void ChangeSize(GLsizei w, GLsizei h)
 	{
@@ -490,7 +518,7 @@ int APIENTRY WinMain(   HINSTANCE       hInst,
 
 	// check to see what operating system is running
 
-	versionInformation.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
+/*	versionInformation.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
 	if(GetVersionEx(&versionInformation))
 	{
 		if(versionInformation.dwPlatformId == VER_PLATFORM_WIN32_NT)
@@ -506,9 +534,9 @@ int APIENTRY WinMain(   HINSTANCE       hInst,
 	{
 		DisplayErrorMessage("GetVersionEx failed!");
 		return (FALSE);
-	}
+	} */
 
-	// ret code to use the NT giveio driver (from tstio example)
+	/*// ret code to use the NT giveio driver (from tstio example)
 	
 	if(versionInformation.dwPlatformId == VER_PLATFORM_WIN32_NT)
 	{
@@ -519,7 +547,49 @@ int APIENTRY WinMain(   HINSTANCE       hInst,
 			return (FALSE);
 		}
 		CloseHandle(h);
+	}*/
+
+//Adam. start 112117
+// ret code to load the runobj.cfg file
+// check whether interface type is different than mouse
+// If it is, try to get a handle to giveio driver
+// If unable, prompt user to install giveio
+if ( get_config_table ( "runobj.cfg" ) == ERROR )
+{
+	return ( ERROR );
+}
+if (config.control_1_interface_type != 2 || config.control_2_interface_type != 2)
+{
+	h = CreateFile("\\\\.\\giveio", GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	if(h == INVALID_HANDLE_VALUE)
+	{
+		if(IsWow64())
+		{
+			DisplayErrorMessage("A control interface type is set to use a device other than the mouse. If this is correct, please install the 64-bit giveio driver! Otherwise, check your runobj settings.");
+			return (FALSE);
+		}
+		else
+		{
+			DisplayErrorMessage("A control interface type is set to use a device other than the mouse. If this is correct, please install the 32-bit giveio driver! Otherwise, check your runobj settings.");
+			return (FALSE);
+		}
+	
 	}
+	else
+	{
+		sprintf(tMessage, "Winobj 2017: Press OK to begin simulation");
+		DisplayInfoMessage(tMessage);
+	}
+}
+else
+{
+	sprintf(tMessage, "Winobj 2017: Press OK to begin simulation");
+	DisplayInfoMessage(tMessage);
+}
+CloseHandle(h);
+//Adam. end 112117
+
+
 
 	// experiment initialization
 
