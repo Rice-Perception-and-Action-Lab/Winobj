@@ -347,6 +347,18 @@ extern int		custom2_data_allocated;
 
 extern int		beep_flag;
 
+//Adam. start 02202016
+extern int		sound_flag;
+extern SOUND_STRUCT	*sound_data;
+extern int		sound_data_index;
+extern int		sound_next_index;
+extern int		sound_data_allocated;
+extern int		sound_on_flag;
+extern int		sound_off_flag;
+extern char 	sound_name[20];
+//Adam. end 02202016
+
+
 extern BEEP_STRUCT	*beep_data;
 
 extern int		beep_data_index;

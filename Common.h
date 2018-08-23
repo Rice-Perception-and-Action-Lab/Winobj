@@ -399,6 +399,18 @@ int		beep_off_flag;
 long	beep_duration;
 int		beep_frequency;
 
+//Adam. start 02202016 
+//create sound variables and a SOUND_STRUCT named sound_data
+int		sound_flag;
+SOUND_STRUCT	*sound_data;
+int		sound_data_index;
+int		sound_next_index;
+int		sound_data_allocated;
+int		sound_on_flag;
+int		sound_off_flag;
+char 	sound_name[20];
+//Adam. end 02202016
+
 int		allocated_flag;
 
 long	current_time;

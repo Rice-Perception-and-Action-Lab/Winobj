@@ -252,7 +252,7 @@ int	experiment_init ()
 	custom1_data_allocated = 0;
 	custom2_data_allocated = 0;
 	beep_data_allocated = 0;
-
+	
 	//Adam. start 02202016
 	sound_data_allocated = 0;
 	//Adam. end 02202016

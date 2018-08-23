@@ -58,6 +58,11 @@ extern int old_write_file ( char *filename );
 extern int read_custom1_file ( char *filename );
 extern int read_custom2_file ( char *filename );
 extern int read_beep_file ( char *filename );
+
+//Adam. start 02202016
+extern int read_sound_file ( char *filename );
+//Adam. end 02202016
+
 extern int read_texture_file ( char *filename );
 extern int print_file ( char *filename );
 extern int get_object ( OBJ *value );

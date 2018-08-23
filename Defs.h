@@ -367,6 +367,14 @@ typedef struct
 	int		beep_frequency;		// 1 - 10000 Hz
 } BEEP_STRUCT;		
 
+//Adam. start 02202016
+typedef struct
+{
+	int		frame;				// frame number 0-n
+	char	name[20];
+	char	*data;
+} SOUND_STRUCT;		
+//Adam. end 02202016
 // Choi. Start. 10061999
 typedef	struct
 {
@@ -502,6 +510,10 @@ typedef struct
 
 	int		texture_flag;			// 1 = textures for this trial, 0 = none
 	int		texture_name[10];		// name of texture map assignments for this trial (.tex is added)
+//Adam. start 02202016 add struct members for sound 
+	int		sound_flag;				// 1 = on so read file, 0 = off
+	char	sound_name[10]; 		// name of file to load (.sound is added)
+//Adam. end 02202016
 } ORD; 
 
 /* configuration file structure */

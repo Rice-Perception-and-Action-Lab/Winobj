@@ -53,6 +53,7 @@
 #include "defs.h"
 #include "global.h"
 
+
 void init_simulation ( void )
 
 {
@@ -375,6 +376,16 @@ void init_simulation ( void )
 		beep_off_flag = 0;
 	}
 	
+//Adam. start 02202016
+	if ( sound_flag )
+	{	
+		sound_on_flag = 0;
+		sound_off_flag = 0;
+		sound_next_index = 0;
+		
+	}
+//Adam. end 02202016
+
 	return;
 }
 
@@ -710,7 +721,7 @@ int	scene_run ()
 			// Bob. end
 
 			/* update screen */
-		
+
 			calculate_draw ( increment, show_mode );
 			
 //			if ( control_1_flag )
@@ -2392,6 +2403,8 @@ long get_pclock ()
 int	calculate_draw ( int increment, int show_mode )
 
 {
+	
+	
 	/* render next scene */
 	
 	// 051599 stereo code
@@ -2451,7 +2464,7 @@ int	calculate_draw ( int increment, int show_mode )
 		{
 			if ( pclock_ticks >= beep_off_time )
 			{
-				SPKR_OFF;
+					;
 				
 				beep_on_flag = 0;
 				
@@ -2460,6 +2473,27 @@ int	calculate_draw ( int increment, int show_mode )
 		}
 	}
 	
+	if (sound_flag && sound_next_index < sound_data_index )
+	{
+		if (!sound_on_flag)
+		{
+				
+			if (frame_number >= sound_data[sound_next_index].frame)
+			{
+					PlaySound(NULL, 0, 0);
+					PlaySound(sound_data[sound_next_index].data,NULL,SND_MEMORY|SND_ASYNC);
+					sound_next_index++;
+				
+			}
+		}
+		
+	}
+	else
+	{
+		//MessageBox(NULL,("!sound_flag"),("Sound Flag"), MB_OK);
+	}
+		
+
 	return ( 1 );
 }
 

@@ -6,65 +6,65 @@
 --------------------Configuration: GLWind - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating command line "rc.exe /l 0x409 /fo"Release/Resource.res" /d "NDEBUG" /d "_AFXDLL" "C:\testobj\Resource.rc"" 
-Creating temporary file "C:\Users\dis\AppData\Local\Temp\RSPCE10.tmp" with contents
+Creating command line "rc.exe /l 0x409 /fo"Release/Resource.res" /d "NDEBUG" /d "_AFXDLL" "G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\Resource.rc"" 
+Creating temporary file "C:\Users\DeLucia\AppData\Local\Temp\RSP5A40.tmp" with contents
 [
-/nologo /MD /w /W0 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Release/" /Fp"Release/GLWind.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
-"C:\testobj\BITMAP.C"
-"C:\testobj\GETXXX.C"
-"C:\testobj\GLWind.c"
-"C:\testobj\IO.C"
-"C:\testobj\RUNOBJ.C"
-"C:\testobj\SERLIB.C"
-"C:\testobj\SHOWSC.C"
-"C:\testobj\TEXTURE.C"
+/nologo /MD /w /W0 /GX /O2 /I "C:\testobj" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Release/" /Fp"Release/GLWind.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\BITMAP.C"
+"G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\GETXXX.C"
+"G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\GLWind.c"
+"G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\IO.C"
+"G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\RUNOBJ.C"
+"G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\SERLIB.C"
+"G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\SHOWSC.C"
+"G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\TEXTURE.C"
 ]
-Creating command line "cl.exe @C:\Users\dis\AppData\Local\Temp\RSPCE10.tmp" 
-Creating temporary file "C:\Users\dis\AppData\Local\Temp\RSPCE11.tmp" with contents
+Creating command line "cl.exe @C:\Users\DeLucia\AppData\Local\Temp\RSP5A40.tmp" 
+Creating temporary file "C:\Users\DeLucia\AppData\Local\Temp\RSP5A51.tmp" with contents
 [
 comdlg32.lib user32.lib gdi32.lib opengl32.lib glu32.lib Tracker\Lib\It2k.lib winmm.lib Wcsc\Lib\cdrvxd32.lib /nologo /subsystem:windows /incremental:no /pdb:".\Release/GLWind.pdb" /machine:I386 /out:".\Release/GLWind.exe" 
-.\Release\BITMAP.OBJ
-.\Release\GETXXX.OBJ
-.\Release\GLWind.obj
-.\Release\IO.OBJ
-.\Release\RUNOBJ.OBJ
-.\Release\SERLIB.OBJ
-.\Release\SHOWSC.OBJ
-.\Release\TEXTURE.OBJ
-.\Release\Resource.res
+".\Release\BITMAP.OBJ"
+".\Release\GETXXX.OBJ"
+".\Release\GLWind.obj"
+".\Release\IO.OBJ"
+".\Release\RUNOBJ.OBJ"
+".\Release\SERLIB.OBJ"
+".\Release\SHOWSC.OBJ"
+".\Release\TEXTURE.OBJ"
+".\Release\Resource.res"
 ]
-Creating command line "link.exe @C:\Users\dis\AppData\Local\Temp\RSPCE11.tmp"
+Creating command line "link.exe @C:\Users\DeLucia\AppData\Local\Temp\RSP5A51.tmp"
 <h3>Output Window</h3>
 Compiling resources...
 Compiling...
 BITMAP.C
 GETXXX.C
 GLWind.c
-C:\testobj\serial.h(48) : note C6311: C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wingdi.h(93) : see previous definition of 'ERROR'
-C:\testobj\serial.h(51) : note C6311: C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\windef.h(67) : see previous definition of 'TRUE'
-C:\testobj\serial.h(264) : note C6311: C:\testobj\comm.h(281) : see previous definition of 'BAUD110'
-C:\testobj\serial.h(266) : note C6311: C:\testobj\comm.h(282) : see previous definition of 'BAUD150'
-C:\testobj\serial.h(267) : note C6311: C:\testobj\comm.h(283) : see previous definition of 'BAUD300'
-C:\testobj\serial.h(268) : note C6311: C:\testobj\comm.h(284) : see previous definition of 'BAUD600'
-C:\testobj\serial.h(269) : note C6311: C:\testobj\comm.h(285) : see previous definition of 'BAUD1200'
-C:\testobj\serial.h(272) : note C6311: C:\testobj\comm.h(286) : see previous definition of 'BAUD2400'
-C:\testobj\serial.h(274) : note C6311: C:\testobj\comm.h(287) : see previous definition of 'BAUD4800'
-C:\testobj\serial.h(276) : note C6311: C:\testobj\comm.h(288) : see previous definition of 'BAUD9600'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(48) : note C6311: C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\wingdi.h(93) : see previous definition of 'ERROR'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(51) : note C6311: C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(67) : see previous definition of 'TRUE'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(264) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(281) : see previous definition of 'BAUD110'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(266) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(282) : see previous definition of 'BAUD150'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(267) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(283) : see previous definition of 'BAUD300'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(268) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(284) : see previous definition of 'BAUD600'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(269) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(285) : see previous definition of 'BAUD1200'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(272) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(286) : see previous definition of 'BAUD2400'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(274) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(287) : see previous definition of 'BAUD4800'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(276) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(288) : see previous definition of 'BAUD9600'
 IO.C
-C:\testobj\serial.h(48) : note C6311: C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wingdi.h(93) : see previous definition of 'ERROR'
-C:\testobj\serial.h(51) : note C6311: C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\windef.h(67) : see previous definition of 'TRUE'
-C:\testobj\serial.h(264) : note C6311: C:\testobj\comm.h(281) : see previous definition of 'BAUD110'
-C:\testobj\serial.h(266) : note C6311: C:\testobj\comm.h(282) : see previous definition of 'BAUD150'
-C:\testobj\serial.h(267) : note C6311: C:\testobj\comm.h(283) : see previous definition of 'BAUD300'
-C:\testobj\serial.h(268) : note C6311: C:\testobj\comm.h(284) : see previous definition of 'BAUD600'
-C:\testobj\serial.h(269) : note C6311: C:\testobj\comm.h(285) : see previous definition of 'BAUD1200'
-C:\testobj\serial.h(272) : note C6311: C:\testobj\comm.h(286) : see previous definition of 'BAUD2400'
-C:\testobj\serial.h(274) : note C6311: C:\testobj\comm.h(287) : see previous definition of 'BAUD4800'
-C:\testobj\serial.h(276) : note C6311: C:\testobj\comm.h(288) : see previous definition of 'BAUD9600'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(48) : note C6311: C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\wingdi.h(93) : see previous definition of 'ERROR'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(51) : note C6311: C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(67) : see previous definition of 'TRUE'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(264) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(281) : see previous definition of 'BAUD110'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(266) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(282) : see previous definition of 'BAUD150'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(267) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(283) : see previous definition of 'BAUD300'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(268) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(284) : see previous definition of 'BAUD600'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(269) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(285) : see previous definition of 'BAUD1200'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(272) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(286) : see previous definition of 'BAUD2400'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(274) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(287) : see previous definition of 'BAUD4800'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(276) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\comm.h(288) : see previous definition of 'BAUD9600'
 RUNOBJ.C
-C:\testobj\serial.h(48) : note C6311: C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wingdi.h(93) : see previous definition of 'ERROR'
-C:\testobj\serial.h(51) : note C6311: C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\windef.h(67) : see previous definition of 'TRUE'
-C:\testobj\defs.h(92) : note C6311: C:\testobj\serial.h(51) : see previous definition of 'TRUE'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(48) : note C6311: C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\wingdi.h(93) : see previous definition of 'ERROR'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(51) : note C6311: C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(67) : see previous definition of 'TRUE'
+G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\defs.h(92) : note C6311: G:\testobj (MULTIPLE SOUNDS WORKING) (DONT EDIT)\serial.h(51) : see previous definition of 'TRUE'
 SERLIB.C
 SHOWSC.C
 TEXTURE.C

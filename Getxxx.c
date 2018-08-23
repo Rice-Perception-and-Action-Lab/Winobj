@@ -2983,7 +2983,8 @@ int read_beep_file ( char *filename )
 	}
 	
 	beep_data_index = i;
-	
+	//sprintf(message[0], "%d", beep_data[0].frame);
+//	MessageBox(NULL,message[0],("Getxxx beep_data frame"), MB_OK);
 	fclose ( input_file );
 	
 	return ( 0 );
@@ -2993,7 +2994,62 @@ int read_beep_file ( char *filename )
  *   Read the beep file
  *
 */
+// Adam. start 02202016
+/*   
+ *   Read the sound file
+ *
+*/
 
+int read_sound_file ( char *filename )
+{
+	FILE *infile;
+	FILE *fileptr;
+	
+	long filelen;
+	
+	int i;
+
+ 	/* Open the input file */
+	
+	if ( ( infile = fopen ( filename, "r" ) ) == NULL )
+		return ( ABORT );
+
+	/* read order file into structure */
+	
+	for ( i = 0 ; get_file_line ( infile, message[0] ) != EOF ; i++ )
+	{
+
+		if ( sscanf ( message[0], "%d %s", 
+			&sound_data[i].frame, 
+			sound_data[i].name) == EOF )
+			break;
+		
+		// Adam. start 04062016
+		// As .snd file is read in, open each wav and save binary data
+		// to dynamic memory buffer to play later during calculate_draw()
+		fileptr = fopen(sound_data[i].name, "rb");
+		fseek(fileptr,0,SEEK_END);
+		filelen=ftell(fileptr);
+		rewind(fileptr);
+
+		sound_data[i].data = (char *)malloc((filelen+1)*sizeof(char));
+		fread(sound_data[i].data,filelen,1,fileptr);
+		fclose(fileptr);
+		// Adam. end 04062016
+	}
+	
+	sound_data_index = i;
+	fclose ( input_file );
+	
+	return ( 0 );
+} 
+
+/*	
+ *   Read the sound file
+ *
+*/
+
+// Adam. end 02202016
 int read_texture_file ( char *filename )
 
 {
